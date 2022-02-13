@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1> Giriş Yap! </h1>
+        
+        <fieldset>
+                  
+          <label for="name">İsim:</label>
+          <input type="text" id="name" name="user_name" placeholder= " <input type= text> " >
+        
+          <label for="email">E mail:</label>
+          <input type="email" id="mail" name="user_email" placeholder="<input type= text>">
+       
+          <label for="password">Şifre:</label>
+          <p class="end">girdiğimiz sifrenin * karakteri ile yazılmasını sağlar</p>
+          <input type="password" id="password" placeholder="<input type= password> " name="user_password">
+          
+        
+          <label>Yaş:</label>
+          
+          
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">13 Yaş üstü</label><br>
+          <h4 class="end">"input type= radio"</h4>
+          <p class="end">belirlenen seçeneklerden sadece bir tane seçmemizi sağlar</p>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 Yaş altı</label>
+          
+        </fieldset>
+        <fieldset>  
+        
+          
+         <label for="bio">Düşünceleriniz:</label>
+          <textarea id="bio" name="user_bio" placeholder="<textarea> </textarea>     uzun mesajlarımızı girmemizi sağlar bize alan yaratır"></textarea>
+          
+        
+       
+        
+         <label for="job">Job Role:</label>
+         <h4 class="end">"<'option> <'/option> (üstten kesme tırnak geçersiz, komut çalışmasın diye eklenmiştir)"</h4>
+         <p class="end">Bize açılır bir liste sunar ve bunlardan yanlızca birini seçmemizi sağlar</p>
+          <select id="job" name="user_job">
+            <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developer">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="rails_developer">Rails Developer</option>
+              <option value="web_designer">Web Designer</option>
+              <option value="wordpress_developer">Wordpress Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option value="android_developer">Android Developer</option>
+              <option value="ios_developer">IOS Developer</option>
+              <option value="mobile_designer">Mobile Designer</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup>
+          </select>
+          
+          <label>İlgi alanı:</label>
+          <h4 class="end">"<'input type="checkbox"> (üstten kesme tırnak geçersiz, komut çalışmasın diye eklenmiştir)"</h4>
+          <p class="end">Bize seçenekler sunar ve birden fazlasını seçmemizi sağlar</p>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Gelişim</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Tasarım</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">işletme</label>
+          
+         </fieldset>
+       
+        <button type="submit" href="#">giriş yap</button>
+        <p class="end">Buton eklememizi sağlar</p>
+        <h4 class="end">"<'button'> <'/button> (üstten kesme tırnak geçersiz, komut çalışmasın diye eklenmiştir)"</h4>
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
